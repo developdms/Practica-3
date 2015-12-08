@@ -22,7 +22,6 @@ if (!$d) {
             <a href="device/index.php">Gestión de dispositivos</a>
             <a href="product/index.php">Gestión de productos</a>
             <a href="../frontend/bill/viewread.php">Gestión de facturas</a>
-          
         </div>
     </body>
 </html>

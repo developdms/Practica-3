@@ -24,7 +24,7 @@
             <tr><td>Identificador</td><td>Precio</td><td>Fecha</td><td>Acciones</td></tr>
         <?php
         foreach ($billes as $key => $value) { $p['idBill']=$value->getIdBill()?>
-            <tr><td>Factura <?= $value->getIdBill()?></td><td><?= $manager->sum($p) ?> €</td><td><?= $value->getInfoDateTime()?></td><td><a href="?idBill=<?= $value->getIdBill()?>">Editar factura</a></td><td><a href="?idBill=<?= $value->getIdBill()?>">Cerrar factura</a></td></tr>
+            <tr><td>Factura <?= $value->getIdBill()?></td><td><?= $manager->sum($p) ?> €</td><td><?= $value->getInfoDateTime()?></td><td><a href="viewedit.php?idBill=<?= $value->getIdBill()?>">Editar factura</a></td></tr>
             <?php } }?>
         </table>
     </body>

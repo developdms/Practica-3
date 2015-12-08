@@ -23,6 +23,7 @@ $total = 0;
     </head>
     <body>
         <div id="wrapper">
+            <h3>Detalle de factura</h3>
         <a href="../product/controller/phpread.php?idBill=<?= $params['idBill']?>&location=all">Añadir productos</a>
         
             <table>

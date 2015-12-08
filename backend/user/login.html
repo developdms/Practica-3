@@ -8,10 +8,11 @@
     </head>
     <body>
         <div id="wrapper">
+            <h3>Registro de usuarios</h3>
             <p>Debes intriducir las credenciales de usuario para este dispositivo</p>
             <form method="POST" action="controller/phplogin.php">
-                <label>Usuario: <br/><input type="password" name="userName" id="userName"/></label><br/>
-                <label>Contraseña:<br/> <input type="password" name="password" id="password"/></label><br/>
+                <label class="labelbig"><strong>Usuario: </strong><br/><input type="text" name="userName" id="userName"/></label><br/>
+                <label class="labelbig"><strong>Contraseña: </strong><br/> <input type="password" name="password" id="password"/></label><br/>
                 <input type="submit" value="ENVIAR"/>
             </form>
         </div>

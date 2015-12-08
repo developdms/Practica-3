@@ -21,7 +21,7 @@ if (Request::req('e') === '1062') {
             <form method="POST" action="controller/phpcreate.php" enctype="multipart/form-data">
                 <label>Nombre de producto:<input type="text" name="description" id="description"/></label>
                 <label>Precio (€):<input type="number" name="price" id="price"/></label>
-                <label>Imagen: <input type="file" name="image" id="image"/></label>
+                
                 <input type="submit" value="GUARDAR"/>
             </form>
         </div>

@@ -38,7 +38,7 @@ $device = $manager->get(Request::req('idDevice'));
                         }
                         ?>>Terminal de administración</option>
                     </select></label>
-                <label>Vincular a usuario:
+                <label>Vincular a usuario:<br/>
                     <select name="user">
                         <option value="0">Sin usuario</option>
                         <?php

@@ -3,10 +3,87 @@
     Author     : MARTIN
 */
 
-#wrapper{
-    width: 40%;
+@font-face {
+    font-family: 'code_boldregular';
+    src: url('../../../fonts/code/code_bold-webfont.eot');
+    src: url('../../../fonts/code/code_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../fonts/code/code_bold-webfont.woff2') format('woff2'),
+         url('../../../fonts/code/code_bold-webfont.woff') format('woff'),
+         url('../../../fonts/code/code_bold-webfont.ttf') format('truetype'),
+         url('../../../fonts/code/code_bold-webfont.svg#code_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'code_lightregular';
+    src: url('../../../fonts/code/code_light-webfont.eot');
+    src: url('../../../fonts/code/code_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../fonts/code/code_light-webfont.woff2') format('woff2'),
+         url('../../../fonts/code/code_light-webfont.woff') format('woff'),
+         url('../../../fonts/code/code_light-webfont.ttf') format('truetype'),
+         url('../../../fonts/code/code_light-webfont.svg#code_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'geosanslightregular';
+    src: url('../../../fonts/geo/geosanslight-webfont.eot');
+    src: url('../../../fonts/geo/geosanslight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../fonts/geo/geosanslight-webfont.woff2') format('woff2'),
+         url('../../../fonts/geo/geosanslight-webfont.woff') format('woff'),
+         url('../../../fonts/geo/geosanslight-webfont.ttf') format('truetype'),
+         url('../../../fonts/geo/geosanslight-webfont.svg#geosanslightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'geosanslightmedium_italic';
+    src: url('../../../fonts/geo/geosanslight-oblique-webfont.eot');
+    src: url('../../../fonts/geo/geosanslight-oblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../fonts/geo/geosanslight-oblique-webfont.woff2') format('woff2'),
+         url('../../../fonts/geo/geosanslight-oblique-webfont.woff') format('woff'),
+         url('../../../fonts/geo/geosanslight-oblique-webfont.ttf') format('truetype'),
+         url('../../../fonts/geo/geosanslight-oblique-webfont.svg#geosanslightmedium_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#wrapper {
+    width: 60%;
     margin: 0 auto;
+    text-align: center;
+    font-family: geosanslightregular;
     font-size: 20px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    font-family: geosanslightregular;
+    font-size: 25px;
+    color: #006666;
+    background-color: #ccffcc;
+    border-top: solid 2px white;
+}
+
+a:hover {
+    color: #ccffcc; 
+    background-color: #006666;
+}
+
+h3 {
+    font-family: code_boldregular; 
+    font-size: 35px;
+    color: #006666;
 }
 
 h3{
@@ -21,8 +98,28 @@ label{
 
 input {
     display: block;
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
+    margin-top: 15px;
+}
+
+#msj {
+    text-align: center;
+}
+
+table {
+    margin-top: 30px;
+    margin: 0 auto;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.labelbig{
+    font-size: 25px;
+}
+
+input[type="submit"]{
+    width: 30%;
 }
 
 #msj {
@@ -35,14 +132,6 @@ a{
     text-align: center;
 }
 
-table{
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 30px;
-    height: 150px;
-    overflow-y: scroll;
-}
-
 td{
     text-align: center;
 }
@@ -50,5 +139,9 @@ td{
 input[type="submit"]{
     width: 30%;
     margin-top: 15px;
+}
+
+.head {
+    font-family: code_lightregular;
 }
 

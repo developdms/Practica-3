@@ -17,9 +17,11 @@ $billes = $manager->getList($params);
     <head>
         <meta charset="UTF-8">
         <title></title>
+        <link rel="stylesheet" href="style/style.css"/>
     </head>
     <body>
         <div id="wrapper">
+            <h3>Facturas en curso</h3>
             <a href="bill/controller/phpcreate.php">Nueva factura</a>
             <form method="POST" action="bill/viewbill.php">
                 <?php foreach ($billes as $key => $value) { ?>

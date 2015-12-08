@@ -20,18 +20,19 @@ $session->erase('devices');
     </head>
     <body>
         <div id="wrapper">
+            <h3>Búsqueda de dispositivos</h3>
             <form method="POST" action="controller/phpread.php">
                 <label>Buscar dispositivo: <br/><input type="text" name="idDevice" id="idDevice"/></label>
                 <input type="submit" value="BUSCAR"/>
             </form> 
             <table>
-                <?php if (count($devices) === 0) { ?>
+                <?php if ($devices === NULL) { ?>
                     <tr><td colspan="3">No se han encontrado dispositivos</td></tr>
                 <?php
                 } else {
                     foreach ($devices as $value) {
                         ?>
-                        <tr><td><?= $value->getIdDevice() ?></td><td><?= $value->getRol() ?></td><td><a href="viewedit.php?idDevice=<?= $value->getIdDevice() ?>">Editar</a></td><td><a href="controller/phpdelete.php?idDevice=<?= $value->getIdDevice() ?>">Eliminar</a></td></tr>
+                    <tr><td class="ident"><?= $value->getIdDevice() ?></td><td class="ident"><?= $value->getRol() ?></td><td><a href="viewedit.php?idDevice=<?= $value->getIdDevice() ?>">Editar</a></td><td><a href="controller/phpdelete.php?idDevice=<?= $value->getIdDevice() ?>">Eliminar</a></td></tr>
                     <?php
                     }
                 }

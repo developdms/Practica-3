@@ -15,11 +15,12 @@ $orderDetail = $session->get('idOrderDetail');
     </head>
     <body>
         <div id="wrapper">
+            <h3>Lista de productos</h3>
             <form method="POST" action="../orderdetail/controller/create.php"/>
             <input type="hidden" name="idBill" value="<?= $idBill ?>"/>
             <table>
                 <?php if (count($products) > 0) { ?>  
-                    <tr><td>Producto</td><td>Precio por unidad</td><td>Cantidad</td></tr>
+                <tr><td class="head">Producto</td><td class="head">Precio por unidad</td><td class="head">Cantidad</td></tr>
                     <?php foreach ($products as $key => $value) { ?>
                         <tr>
                             <td><input type="hidden" name="idProduct[]" value="<?= $value->getIdProduct() ?>"/><?= $value->getDescription() ?></td>
